@@ -2,9 +2,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/menus-min.css
-">
-<style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/menus-min.css">
+<script>
 *{
     box-sizing: border-box;
 }
@@ -12,8 +12,8 @@ body {
     font-family: Arial;
     box-sizing: border-box;
     margin: 0;
+    height: 100vh;
 }
-
 .header {
     padding: 60px;
     text-align: center;
@@ -22,9 +22,9 @@ body {
 }
 .navbar {
     display: flex;
-    background: grey;
     text-align: center;
-
+    flex: 30%;
+    color: white;
 }
 .navbar a {
     color: black;
@@ -35,10 +35,11 @@ body {
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    height: calc(100vh - 100px)
 }
 .side {
  flex: 30%;
+ flex-flow: wrap;
  background-color: #f1f1f1;
  padding: 20px;
 }
@@ -58,82 +59,51 @@ body {
     font-family: Arial;
     margin: 0;
 }
-.header {
-    padding: 60px;
-    text-align: center;
-    background: black;
-    color: white;
-}
-.navbar {
-    display: flex;
-    background: grey;
-    text-align: center;
 
-}
-.navbar a {
-    color: black;
-    padding: 14px 25px;
-    text-decoration: none;
-    text-align: center; 
-}
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: calc(100vh - 100px)
 }
 .side {
  flex: 30%;
- background-color: #f1f1f1;
+ background-color:  #845aa0;
  padding: 20px;
-}
-.main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-    text-align: left;
-    font-size: 12pt;
-}
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-.logo {
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  text-align: left;
-}
-.logo a { 
-    background-color: aliceblue;
+ color: white;
 }
 .footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
+    padding: 15px;
+    text-align: left;
+    background: #ddd;
+  }
 @media screen and (max-width: 700px) {
-  .row, .navbar, .logo
+  .row, .navbar, .logo 
     flex-direction: column;
     justify-content: center;
   }
 }
- 
-</style>
+    
+</script> 
 </head>
 <body> 
-<div class="navbar">
-    <div class="pure-menu pure-menu-horizontal">
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="https://www.facebook.com/" class="pure-menu-link">Portfolio</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Pricing</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact us</a></li>
-        </ul>
-    </div>
-</div>
+
 <div class="row">
     <div class="side">
-        <h2>What we do </h2>
+            <div class="navbar">
+            <div class="pure-menu pure-menu-horizontal">
+                    <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="https://www.facebook.com/" class="pure-menu-link">Portfolio</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Pricing</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1 style="text-align: center; color: black;">Black Diamond</h4>
+        <br>
+        <h2 class="w3-animate-opacity">What we do</h2>
         <p>Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit. 
             Suspendisse euismod interdum euismod. 
@@ -144,7 +114,7 @@ body {
             Sed sed lacus vel dui dictum elementum. 
             Donec luctus sit amet nisl et posuere. 
             Nulla facilisi. </p>
-        <h2>Our Aims</h2>
+        <h2 class="w3-animate-opacity">Our Aims</h2>
         <p>Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit. 
             Suspendisse euismod interdum euismod. 
@@ -155,12 +125,23 @@ body {
             Sed sed lacus vel dui dictum elementum. 
             Donec luctus sit amet nisl et posuere. 
             Nulla facilisi. </p>
-        <br> 
+        <h2 class="w3-animate-opacity">Our Promise</h2>
+        <p>Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. 
+            Suspendisse euismod interdum euismod. 
+            Curabitur massa lorem, porta vitae maximus vel, 
+            iaculis quis lectus. Etiam eu commodo leo, 
+            vel pellentesque ipsum. Duis porta arcu sed nunc consequat, 
+            a molestie turpis consequat. 
+            Sed sed lacus vel dui dictum elementum. 
+            Donec luctus sit amet nisl et posuere. 
+            Nulla facilisi. </p>
         <br>
         <br>
     </div>
 <div class="main">
-    <h2>Black Dimond</h2>
+    <br>
+    <br>
     <br>
     <p>Lorem ipsum dolor sit amet,
        consectetur adipiscing elit.  
@@ -252,9 +233,11 @@ body {
                 Sed sed lacus vel dui dictum elementum. 
                 Donec luctus sit amet nisl et posuere. 
                 Nulla facilisi. </p>
+            <br>
+            <br>
+            <div class=footer>
+                    <h5> Black Diamond </h5>
+                </div>
         </div>
       </div>
-<div class="footer">
-        <h2>Footer</h2>
-    </div>
 </body>
